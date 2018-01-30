@@ -1,0 +1,24 @@
+.card{
+	height: 500px;
+	background-image: url("http://www.shawacademy.com/blog/wp-content/uploads/2015/07/coconuts-with-leaves.jpg");
+	background-size: cover !important;
+	position: relative;
+}
+
+.card-avatar{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+.card-text{
+	width: 20px;
+	color: #314F00;
+	font-size: 30px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+}

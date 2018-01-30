@@ -1,0 +1,23 @@
+@import url("components/text.css");
+@import url("components/images.css");
+@import url("components/cadre.css");
+@import url("components/card.css");
+
+
+
+.btn-red{
+	position: 
+	right: 70px;
+	bottom: 50px;
+	color: white;
+	background-color: red;
+	width: 50px;
+	padding: 20px; 
+}
+
+#facbook_logo {
+	width: 50px;
+}
+.network{
+	width: 50px;
+}
