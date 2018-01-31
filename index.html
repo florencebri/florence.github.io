@@ -1,6 +1,9 @@
  <!DOCTYPE html>
 <html>
 <head>
+	<meta name="description" content="le meilleur site de chat du monde">
+	<meta propoerty="og:title" content="mon site">
+	<meta property="og:image" content="http://www.animauxdico.com/img/charte_graphique/chat.jpg">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Kavivanar|Playfair+Display" rel="stylesheet">
 	<title>Cat</title>
@@ -21,11 +24,22 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+
 
 <div class="banner">
   <div class="banner-content">
-    <h1>Cat</h1>
+<div id="wrapper">
+   	<div id="preloader">
+    	<div id="preloader2">
+   			<div id="preloader3">
+   			</div>	
+    	</div>
+   	 </div>
+    <div id="annonce">Bienvenue sur cat.fr</div>
+</div>
     <p>Learn to code with us in Berlin</p>
     <a class="btn btn-primary btn-lg">Start now</a>
   </div>
@@ -158,6 +172,37 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <div class="typeform-widget" data-url="https://flo109.typeform.com/to/UiyFXE" style="width: 100%; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com//?utm_campaign=UiyFXE&amp;utm_source=typeform.com-11652902-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=FR" style="color: #999" target="_blank">Typeform</a> </div>
 
 
+
+<script>
+t$(document).ready(function(){
+var wrapper = $('#wrapper');
+var loader = $('#preloader');
+var loader2 = $('#preloader2');
+var loader3 = $('#preloader3');
+var sentence = $('#annonce');
+sentence.html(sentence.text().replace(/()\w/g, '<span>$&</span>'));
+var tableLoder = [loader,loader2,loader3];
+var wrapperWdth = (document.body.clientWidth);
+var wrapperheight = (document.body.clientHeight);
+var tl = new TimelineMax();
+$(wrapper).width(wrapperWdth);
+$(wrapper).height(wrapperheight);
+$('body').css({padding:0,margin:0,backgroundColor:'#000'});
+$('#annonce > span').css('display','inline-block');
+
+tl.set(wrapper,{css:{position:'absolute',width:'100%',height:'100%',backgroundColor:'whitesmoke',zIndex:'4500',opacity:'0.9'}})
+.set(loader,{css:{borderTop:'5px solid #c0b688',width:'150px',height:'150px',position:'absolute',left:'50%',marginLeft:'-75px',top:'50%',marginTop:'-75px',borderRadius:'50%',zIndex:'5000'}})
+.set(loader2,{css:{borderTop:'4px solid #a7a8aa',width:'130px',height:'130px',position:'absolute',left:'50%',marginLeft:'-65px',top:'50%',marginTop:'-65px',borderRadius:'50%',zIndex:'5000'}})
+.set(loader3,{css:{borderTop:'3px solid #dfd49d',width:'110px',height:'110px',position:'absolute',left:'50%',marginLeft:'-55px',top:'50%',marginTop:'-55px',borderRadius:'50%',zIndex:'5000'}})
+.set(sentence,{css:{width:'900px',height:'50px',position:'absolute',left:'50%',marginLeft:'-350px',top:'50%',marginTop:'-125px',zIndex:'5000',textTransform:'uppercase',fontSize:'42px',color:'#c0b688'}})
+
+
+
+	tl.to(tableLoder,2,{rotation:360,repeat:1,opacity:1},'here')
+	.staggerFrom($('#annonce > span'), 0.3,{autoAlpha:0,rotation:-90},0.1,'here')
+	.staggerTo([tableLoder,wrapper],2,{opacity:0},0.2);
+})
+</script>
 
 </body>
 </html>
