@@ -1,24 +1,59 @@
-@import url("components/text.css");
-@import url("components/images.css");
-@import url("components/cadre.css");
-@import url("components/card.css");
 @import url("components/banner.css");
+@import url("components/card.css");
 
 
-
-.btn-red{
-	position: 
-	right: 70px;
-	bottom: 50px;
-	color: white;
-	background-color: red;
-	width: 50px;
-	padding: 20px; 
+.navbar{
+ box-shadow: 0 1PX 5PX 0, rgba(0, 0, 0, 0, 1);
+ background : rgba(255, 255, 255, 0,3);
+ transition: all 0,3s;
+ height: 70px;
+ padding: 0px 30px;
+ display: flex;
+ align-items: center;
+ position: absolute;
+ top: 0px;
+ width: 100%;
 }
 
-#facbook_logo {
-	width: 50px;
+.list-inline{
+ color: black;
 }
-.network{
-	width: 50px;
+
+.navbar-logo{
+ position: absolute;
+ right: 15px;
+ top: 10px;
+ height: 70px;
+ vertical-align: middle;
+ border : 0;
+}
+
+
+#mc_embed_signup {text-align: center;
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+  width:100%;
+}
+
+#mc-embedded-subscribe-form {font-size: 20px;
+margin-top: 20px;}
+
+#mce-EMAIL {font-size: 20px;
+margin-top: 40px;}
+
+.button {background-color: grey;
+color: white;
+margin-bottom: 40px;}
+
+.footer {width: 100%;
+}
+
+.footer h1 {text-align: center;
+  color: white;
+}
+
+.icon {color: white;
+font-size: 30px;
+margin-left: 10px;
 }
